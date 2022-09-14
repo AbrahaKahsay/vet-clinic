@@ -32,3 +32,9 @@ COMMIT;
 BEGIN;
 DELETE FROM animals;
 ROLLBACK;
+
+-- Delete all animals born after Jan 1st 2022
+BEGIN;
+DELETE FROM animals
+WHERE date_of_birth >= '2022-01-01';
+
