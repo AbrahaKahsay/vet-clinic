@@ -17,3 +17,12 @@ BEGIN;
 UPDATE animals
 SET species = 'unspecified';
 ROLLBACK;
+
+-- update species in a transaction
+BEGIN;
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon';
+UPDATE animals
+SET species = 'digimon'
+WHERE name NOT LIKE '%mon';
