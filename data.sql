@@ -23,10 +23,3 @@ INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) 
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Boarmon','2005-06-07', 7, TRUE, 20.4);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Blossom','1998-10-13', 3, TRUE, 17);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Ditto','2022-01-4', 4, TRUE, 22);
-
--- Inside a transaction update the animals table by setting the species column to unspecified.Then roll back the change
--- and verify that the species columns went back to the state before the transaction.
-BEGIN;
-UPDATE animals
-SET species = 'unspecified';
-ROLLBACK;
