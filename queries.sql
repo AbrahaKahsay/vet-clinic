@@ -27,3 +27,8 @@ UPDATE animals
 SET species = 'digimon'
 WHERE name NOT LIKE '%mon';
 COMMIT;
+
+-- Inside a transaction delete all records in the animals table, then roll back the transaction.
+BEGIN;
+DELETE FROM animals;
+ROLLBACK;
