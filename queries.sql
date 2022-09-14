@@ -60,3 +60,7 @@ WHERE escape_attempts = 0;
 --minimum and maximum weight
 SELECT MIN(weight_kg) FROM animals;
 SELECT MAX(weight_kg) FROM animals;
+
+--Who escapes the most, neutered or not neutered animals?
+SELECT neutered, SUM(escape_attempts) FROM animals
+GROUP BY neutered;
