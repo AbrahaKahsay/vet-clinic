@@ -8,3 +8,12 @@ SELECT name, escape_attempts FROM animals WHERE weight_kg>10.5;
 SELECT * FROM animals WHERE neutered='t';
 SELECT * FROM animals WHERE NOT name='Gabumon';
 SELECT * FROM animals WHERE weight_kg >=10.4 AND weight_kg <=17.3;
+
+-- New data entry
+
+-- Inside a transaction update the animals table by setting the species column to unspecified.Then roll back the change
+-- and verify that the species columns went back to the state before the transaction.
+BEGIN;
+UPDATE animals
+SET species = 'unspecified';
+ROLLBACK;
