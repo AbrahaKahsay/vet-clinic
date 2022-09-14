@@ -26,3 +26,4 @@ WHERE name LIKE '%mon';
 UPDATE animals
 SET species = 'digimon'
 WHERE name NOT LIKE '%mon';
+COMMIT;
