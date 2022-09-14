@@ -13,5 +13,5 @@ CREATE TABLE animals (
 -- Add a column species of type string to your animals table.
 BEGIN;
 ALTER TABLE animals
-ADD COLUMN species INT;
+ADD COLUMN species VARCHAR;
 COMMIT;
