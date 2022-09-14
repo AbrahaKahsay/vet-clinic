@@ -9,3 +9,8 @@ INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) 
 UPDATE animals
 SET date_of_birth = '2018-11-15'
 WHERE ID = 2;
+
+-- Delete all the existing data from animals table
+BEGIN;
+DELETE FROM animals;
+COMMIT;
