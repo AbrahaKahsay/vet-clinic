@@ -56,3 +56,7 @@ SELECT COUNT(*) FROM animals;
 -- count animals with no escape attempts
 SELECT COUNT(*) FROM animals
 WHERE escape_attempts = 0;
+
+--minimum and maximum weight
+SELECT MIN(weight_kg) FROM animals;
+SELECT MAX(weight_kg) FROM animals;
