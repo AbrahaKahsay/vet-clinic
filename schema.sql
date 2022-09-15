@@ -27,6 +27,15 @@ CREATE TABLE species (
     name VARCHAR,
     PRIMARY KEY (id)
     );
+    
 --  Remove species column from animals table
 ALTER TABLE animals
 DROP COLUMN species;
+
+ALTER TABLE animals
+ADD COLUMN species_id INT
+REFERENCES species;
+
+ALTER TABLE animals
+ADD COLUMN owner_id INT
+REFERENCES owners;
