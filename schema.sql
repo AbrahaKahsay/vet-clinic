@@ -27,3 +27,6 @@ CREATE TABLE species (
     name VARCHAR,
     PRIMARY KEY (id)
     );
+--  Remove species column from animals table
+ALTER TABLE animals
+DROP COLUMN species;
