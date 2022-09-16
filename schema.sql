@@ -54,3 +54,10 @@ CREATE TABLE vets (
     PRIMARY KEY (id)
     );
     
+CREATE TABLE specializations (
+    species_id INT,
+    vet_id INT,
+    PRIMARY KEY (species_id, vet_id),
+    CONSTRAINT fk_species FOREIGN KEY (species_id) REFERENCES species (id),
+    CONSTRAINT fk_vets FOREIGN KEY (vet_id) REFERENCES vets (id)
+    );
