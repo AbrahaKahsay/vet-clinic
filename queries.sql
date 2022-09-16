@@ -137,7 +137,15 @@ JOIN animals
 ON animals.id = visits.animal_id 
 WHERE vets.name = 'Stephanie Mendez' 
 GROUP BY vets.name;
+
 -- List all vets and their specialties, including vets with no specialties.
+SELECT vets.name, species.name 
+FROM vets 
+LEFT JOIN specializations 
+ON vets.id = specializations.vet_id 
+LEFT JOIN species 
+ON species.id = specializations.species_id;
+
 -- List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
 -- What animal has the most visits to vets?
 -- Who was Maisy Smith's first visit?
