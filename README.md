@@ -16,7 +16,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 - GitHub: [@AbrahaKahsay](https://github.com/AbrahaKahsay)
 - Twitter: [@abraha_ka](https://twitter.com/abraha_ka)
-- LinkedIn: [abraha-kahsay](www.linkedin.com/in/abraha-kahsay-492771135/)
+- LinkedIn: [@abraha-kahsay](www.linkedin.com/in/abraha-kahsay-492771135/)
 
 ## 🤝 Contributing
 
