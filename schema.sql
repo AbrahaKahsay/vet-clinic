@@ -54,10 +54,19 @@ CREATE TABLE vets (
     PRIMARY KEY (id)
     );
     
+--  many-to-many relations join table for species and vets   
 CREATE TABLE specializations (
     species_id INT,
     vet_id INT,
     PRIMARY KEY (species_id, vet_id),
     CONSTRAINT fk_species FOREIGN KEY (species_id) REFERENCES species (id),
+    CONSTRAINT fk_vets FOREIGN KEY (vet_id) REFERENCES vets (id)
+    );
+--  many-to-many relations join table for animals and vets
+CREATE TABLE visits (
+    animal_id INT,
+    vet_id INT,
+    visit_date DATE,
+    CONSTRAINT fk_animals FOREIGN KEY (animal_id) REFERENCES animals (id),
     CONSTRAINT fk_vets FOREIGN KEY (vet_id) REFERENCES vets (id)
     );
