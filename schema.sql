@@ -77,3 +77,16 @@ SELECT * FROM (SELECT id FROM animals) animal_id,
 
 insert into owners (full_name, email) 
 select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
+
+-- Creating an index to optimize the performance of animal_id =4
+CREATE INDEX animal_index
+ON visits (animal_id); 
+
+-- Creating an index to optimize the performance of animal_id =4
+CREATE INDEX animal_index
+ON visits (animal_id); 
+
+DROP INDEX animal_index;
+
+CREATE INDEX vet_index
+ON visits (vet_id);
