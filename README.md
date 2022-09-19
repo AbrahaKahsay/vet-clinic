@@ -18,14 +18,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@abraha_ka](https://twitter.com/abraha_ka)
 - LinkedIn: [abraha-kahsay](https://www.linkedin.com/in/abraha-kahsay/)
 
-## Author
-
-👤 **Mumenya Nyamu**
-
-- GitHub: [@Nyame-Wolf](https://github.com/Nyame-Wolf)
-- Twitter: [@mumenyam](https://twitter.com/Mumenyam)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mumenya-nyamu-software-engineer/)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
