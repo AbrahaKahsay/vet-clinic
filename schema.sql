@@ -70,3 +70,20 @@ CREATE TABLE visits (
     CONSTRAINT fk_animals FOREIGN KEY (animal_id) REFERENCES animals (id),
     CONSTRAINT fk_vets FOREIGN KEY (vet_id) REFERENCES vets (id)
     );
+
+
+-- Creating an index to optimize the performance of animal_id =4
+CREATE INDEX animal_index
+ON visits (animal_id); 
+
+-- Creating an index to optimize the performance of animal_id =4
+CREATE INDEX animal_index
+ON visits (animal_id); 
+
+DROP INDEX animal_index;
+
+CREATE INDEX vet_index
+ON visits (vet_id);
+
+CREATE INDEX email_index
+ON owners (email);
